@@ -1,8 +1,29 @@
-import React from 'react';
-import { render } from 'react-dom';
-import App from './components/App';
+import {
+  createStore,
+  applyMiddleware
+} from 'redux';
 
-render(
-  <App />,
-  document.getElementById('root')
+const logger = store => next => action => {
+  console.log('Before reducer', store.getState());
+  next(action);
+  console.log('After reducer', store.getState());
+};
+
+function reducer(state = {}, action) {
+  switch(action.type) {
+    case 'YES':
+      return 'yes';
+    default:
+      return state;
+  }
+}
+
+const store = createStore(
+  reducer,
+  applyMiddleware(logger)
 );
+
+store.dispatch({
+  type: 'YES'
+});
+
