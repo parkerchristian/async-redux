@@ -27,3 +27,6 @@ store.dispatch({
   type: 'YES'
 });
 
+// npm i -D @babel-node 
+//-- then run babel node w/:
+// npx babel-node src/index.js
