@@ -4,13 +4,13 @@ import PropTypes from 'prop-types';
 function Character({ character }) {
   const css = {
     width: '200px',
-    display: 'flex',
-    justifyContent: 'center',
-    margin: '5px'
+    display: 'block',
+    margin: '5px',
+    border: 'solid'
   };
   return (
     <section style={css}>
-      <img src={character.photoUrl} />
+      <img src={character.photoUrl} style={{ width: '150px' }}/>
       <p>{character.name}</p>
     </section>
   );

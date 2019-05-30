@@ -12,7 +12,8 @@ function Characters({ characters }) {
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'center',
-    margin: '5px'
+    margin: '5px',
+    listStyle: 'none',
   };
   return (
     <ul style={css}>
