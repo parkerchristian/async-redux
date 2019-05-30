@@ -13,7 +13,7 @@ function Characters({ characters }) {
     flexWrap: 'wrap',
     justifyContent: 'center',
     margin: '5px',
-    listStyle: 'none',
+    listStyle: 'none'
   };
   return (
     <ul style={css}>
