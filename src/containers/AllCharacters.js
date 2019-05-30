@@ -23,21 +23,16 @@ class AllCharacters extends PureComponent {
   }
 }
 
-// mapStateToProps(allows to check redux) 
-// in redux, holds all your state as props now
 const mapStateToProps = state => ({
   characters: getCharactersSelector(state)
 });
 
-// then mapDispatchToProps(makes apiCall w/action creator)
 const mapDispatchToProps = dispatch => ({
   fetch() {
     dispatch(characterActions());
   }
 });
 
-
-// connect to store
 export default connect(
   mapStateToProps,
   mapDispatchToProps
