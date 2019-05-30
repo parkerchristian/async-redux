@@ -1,8 +1,8 @@
-import { getCharacterApi } from '../services/avatarApi';
+import { getCharactersApi } from '../services/avatarApi';
 
 export const GET_CHARACTERS = 'GET_CHARACTERS';
 export const characterActions = () => dispatch => {
-  return getCharacterApi()
+  return getCharactersApi()
     .then(results => {
       dispatch({
         type: GET_CHARACTERS,

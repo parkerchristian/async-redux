@@ -23,7 +23,7 @@ function Characters({ characters }) {
 }
 
 Characters.propTypes = {
-  characters: PropTypes.array.isRequired
+  characters: PropTypes.array
 };
 
 export default Characters;

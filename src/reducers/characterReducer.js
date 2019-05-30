@@ -1,9 +1,9 @@
-import GET_CHARACTERS from '../actions/characterActions';
+import { GET_CHARACTERS } from '../actions/characterActions';
 
 export default function reducer(state = [], action) {
   switch(action.type) {
     case GET_CHARACTERS:
-      return [...state, action.payload];
+      return  action.payload;
     default:
       return state;
   }
