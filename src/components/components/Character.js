@@ -10,7 +10,7 @@ function Character({ character }) {
   };
   return (
     <section style={css}>
-      <img src={character.img} />
+      <img src={character.photoUrl} />
       <p>{character.name}</p>
     </section>
   );
