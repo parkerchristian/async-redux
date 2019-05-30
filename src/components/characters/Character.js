@@ -10,12 +10,14 @@ function Character({ character }) {
     justifyContent: 'center',
     alignItems: 'center',
     margin: '5px',
-    border: 'solid'
+    border: 'solid',
+    borderRadius: '100%'
   };
   return (
     <section style={css}>
-      <img src={character.photoUrl} style={{ width: '170px', height: '110px' }}/>
-      <p>{character.name}</p>
+      <img src={character.photoUrl} style={{ width: '150px', height: '150px',
+        borderRadius: '100%' }}/>
+      <p style={{ position: 'absolute', marginTop: '75px', background: 'white' }}>{character.name}</p>
     </section>
   );
 }

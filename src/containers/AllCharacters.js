@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import Characters from '../components/components/Characters';
+import Characters from '../components/characters/Characters';
 import { getCharactersSelector } from '../selectors/charactersSelectors';
 import { characterActions } from '../actions/characterActions';
 
