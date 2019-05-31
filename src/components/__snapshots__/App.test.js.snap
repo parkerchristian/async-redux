@@ -2,6 +2,7 @@
 
 exports[`App Component TEST renders App 1`] = `
 <Fragment>
+  <Header />
   <Connect(AllCharacters) />
 </Fragment>
 `;
